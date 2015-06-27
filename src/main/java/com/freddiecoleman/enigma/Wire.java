@@ -1,5 +1,9 @@
 package com.freddiecoleman.enigma;
 
+/**
+ * @author freddiecoleman
+ *
+ */
 public final class Wire {
 	
 	private final char head;

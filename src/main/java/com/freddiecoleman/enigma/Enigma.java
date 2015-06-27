@@ -18,12 +18,12 @@ public final class Enigma {
 		Wire[] wires = { new Wire('a', 'x') };
 		Enigma enigma = new Enigma(wires);
 		
-		enigma.input('a');
-		enigma.input('b');
-		enigma.input('c');
-		enigma.input('x');
-		enigma.input('y');
-		enigma.input('z');
+		enigma.inputKey('a');
+		enigma.inputKey('b');
+		enigma.inputKey('c');
+		enigma.inputKey('x');
+		enigma.inputKey('y');
+		enigma.inputKey('z');
 		
 		System.out.println(enigma.encryptedMessage());
 	}

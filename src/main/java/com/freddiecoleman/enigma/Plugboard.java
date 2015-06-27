@@ -2,6 +2,10 @@ package com.freddiecoleman.enigma;
 
 import java.util.HashMap;
 
+/**
+ * @author freddiecoleman
+ *
+ */
 public final class Plugboard {
 	
 	private final HashMap<Character, Character> keyMappings = new HashMap<Character, Character>();

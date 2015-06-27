@@ -32,8 +32,8 @@ public final class Enigma {
 	 * Pressing a key on the keyboard
 	 * @param inputKey
 	 */
-	public void input(char inputKey){
-		encryptedMessage.append(plugboard.convert(inputKey));
+	public void inputKey(char key){
+		encryptedMessage.append(plugboard.convert(key));
 	}
 	
 	/**

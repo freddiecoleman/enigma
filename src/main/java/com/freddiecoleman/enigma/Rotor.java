@@ -8,7 +8,7 @@ import java.util.HashMap;
  * @author freddiecoleman
  *
  */
-public class Rotor {
+public final class Rotor {
 	
 	private final HashMap<Character, Character> keyMappings = new HashMap<Character, Character>();
 	private int currentPosition;

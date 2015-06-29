@@ -10,10 +10,15 @@ import java.util.HashMap;
  */
 public final class Rotor {
 	
+	private static final int CHARACTER_COUNT = 26;
 	private final HashMap<Character, Character> keyMappings = new HashMap<Character, Character>();
 	private int currentPosition;
 	
 	public Rotor(int startingPosition, String substitutionCipher){
+		if(substitutionCipher.length() != CHARACTER_COUNT)
+			throw new IllegalArgumentException("Substition ciper must be " + CHARACTER_COUNT + 
+					"characters long!");
+		
 		String alphabet = "abcdefghijklmnopqrstuvwxyz";
 		this.currentPosition = startingPosition;
 		for(int i = 0; i < substitutionCipher.length(); i++){

@@ -11,9 +11,11 @@ import java.util.HashMap;
 public class Rotor {
 	
 	private final HashMap<Character, Character> keyMappings = new HashMap<Character, Character>();
+	private int currentPosition;
 	
-	public Rotor(String substitutionCipher){
+	public Rotor(int startingPosition, String substitutionCipher){
 		String alphabet = "abcdefghijklmnopqrstuvwxyz";
+		this.currentPosition = startingPosition;
 		for(int i = 0; i < substitutionCipher.length(); i++){
 			keyMappings.put(alphabet.charAt(i), substitutionCipher.charAt(i));
 			keyMappings.put(substitutionCipher.charAt(i), alphabet.charAt(i));
